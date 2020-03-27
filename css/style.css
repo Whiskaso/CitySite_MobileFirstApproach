@@ -15,7 +15,7 @@ body {
 h2,
 h3,
 a {
-    color: #093a58;
+    color: rgb(177, 135, 31);
 }
 
 a {
@@ -24,6 +24,21 @@ a {
 
 img {
     max-width: 100%;
+}
+
+figcaption {
+    padding: 15px;
+    background-color: rgba(102, 107, 81, 0.8);
+    color: rgba(255, 184, 4);
+
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    position: relative;
 }
 
 
@@ -37,7 +52,151 @@ BASE LAYOUT STYLES
     font-size: 1.25em;
 }
 
-.main-header a,
-.main-nav a {
+.main-header,
+.banner,
+.main-footer {
     text-align: center;
+}
+
+.main-header a {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.main-nav a {
+    color: rgb(255, 184, 4);
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    color: rgb(177, 135, 31);
+}
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.banner,
+.main-footer {
+    background-color: rgb(102, 107, 81);
+    color: rgb(255, 184, 4);
+    padding: 30px;
+}
+
+.main-footer {
+    margin-top: 20px;
+}
+
+.headline {
+    margin-bottom: 0;
+}
+
+.col {
+    padding-top: 15px;
+}
+
+/* ---- Page Elements ---- */
+
+.location {
+    position: absolute;
+    width: 40px;
+    top: -15px;
+    right: -12px;
+}
+
+/*
+.feat-img {
+    border: 3px ridge rgb(255, 184, 4);
+    border-radius: 60px 25px;
+    padding: 3px;
+    opacity: 0.9;
+} 
+
+*/
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+    /* ------- NAVIGATION ------- */
+
+    .name,
+    .main-nav,
+    .main-nav li {
+        display: inline-block;
+    }
+
+    .main-nav li {
+        padding: 18px;
+    }
+
+    .name,
+    .col {
+        float: left;
+    }
+
+    .main-nav {
+        float: right;
+    }
+
+    /* ---- Layout Containers ---- */
+
+    .container {
+        width: 85%;
+    }
+
+    .tagline {
+        font-size: 1.4em;
+    }
+
+    .primary,
+    .secondary {
+        width: 50%;
+    }
+
+    .col {
+        padding-right: 20px;
+    }
+
+    .col:last-child {
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* ---- Layout Containers ---- */
+
+    .container {
+        width: 80%;
+    }
+
+    .secondary,
+    .tertiary {
+        width: 30%;
+    }
+
+    .primary {
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+/* -------FLOAT CLEARFIX ----------*/
+
+.clearfix::after {
+    content: ' ';
+    display: table;
+    clear: both;    
 }
