@@ -108,15 +108,9 @@ BASE LAYOUT STYLES
     right: -12px;
 }
 
-/*
 .feat-img {
-    border: 3px ridge rgb(255, 184, 4);
-    border-radius: 60px 25px;
-    padding: 3px;
-    opacity: 0.9;
+    box-shadow: 5px 5px 5px rgb(255, 184, 4);
 } 
-
-*/
 
 /* ================================= 
   Media Queries
