@@ -121,6 +121,19 @@ BASE LAYOUT STYLES
 
     /* ------- NAVIGATION ------- */
 
+    body {
+        padding-top: 72px;
+    }
+
+    .main-header {
+        position: fixed;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0,0,0,.4);
+        width: 100%;
+        top: 0;
+        z-index: 1;
+    }
+
     .name,
     .main-nav,
     .main-nav li {
